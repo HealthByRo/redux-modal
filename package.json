@@ -7,13 +7,13 @@
   "author": "Arabella Front-End Team",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf lib && babel --presets es2015,stage-0 --plugins transform-decorators-legacy -d lib/ src/ --ignore \"**/*.test.js\",\"**/*.stories.js\"",
+    "build": "rm -rf lib && babel --presets es2015,es2016,stage-0,react,flow --plugins transform-decorators-legacy -d lib/ src/ --ignore \"**/*.test.js\",\"**/*.stories.js\"",
     "test": "jest --coverage",
     "test:watch": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "npm run lint:js",
-    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern 'flow-typed/' --ignore-pattern 'lib/' src/**",
+    "lint:eslint": "eslint src/**",
     "lint:js": "npm run lint:eslint -- src/ ",
     "lint:staged": "lint-staged"
   },
@@ -21,13 +21,6 @@
     "*.js": "lint:eslint"
   },
   "pre-commit": "lint:staged",
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-0",
-      "react"
-    ]
-  },
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb",
