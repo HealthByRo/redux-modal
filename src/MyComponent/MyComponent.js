@@ -2,6 +2,9 @@
 
 import React, { PureComponent } from 'react';
 
+import Card from 'antd/lib/card';
+import 'antd/lib/card/style/css';
+
 export default class MyComponent extends PureComponent {
   static defaultProps = {
     text: 'DEFAULT_TEXT',
@@ -13,10 +16,7 @@ export default class MyComponent extends PureComponent {
 
   render() {
     return (
-      <div>
-        <h2>This is sample component to work on!</h2>
-        <p>{this.props.text}</p>
-      </div>
+      <Card title="Sample component">lorem ipsum dolor sit</Card>
     );
   }
 }
