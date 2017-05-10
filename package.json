@@ -1,26 +1,33 @@
 {
-  "name": "react-table-container",
+  "name": "arc-sample",
   "version": "1.0.0",
-  "description": "Table container",
+  "description": "An example of how to start a new React Component in Arabella style",
   "main": "lib/index.js",
-  "repository": "git@bitbucket.org:arabellatech/react-table-container.git",
-  "author": "Arabella Front-End Team",
+  "repository": "git@bitbucket.org:arabellatech/arc-sample.git",
+  "author": "Michal Mrowiec <michal.mrowiec@simplesoft.pl>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf lib && babel --presets es2015,stage-0 --plugins transform-decorators-legacy -d lib/ src/ --ignore \"**/*.test.js\",\"**/*.stories.js\"",
+    "build": "",
     "test": "jest --coverage",
     "test:watch": "jest --watchAll",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "npm run lint:js",
-    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern 'flow-typed/' --ignore-pattern 'lib/' src/**",
-    "lint:js": "npm run lint:eslint -- src/ ",
+    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts",
+    "lint:js": "npm run lint:eslint -- . ",
     "lint:staged": "lint-staged"
   },
   "lint-staged": {
     "*.js": "lint:eslint"
   },
   "pre-commit": "lint:staged",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ]
+  },
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb",
@@ -113,10 +120,7 @@
     ],
     "testRegex": "src/.*\\.test[s]?\\.js$"
   },
-  "dependencies": {
-    "@kadira/react-storybook-decorator-centered": "^1.1.2",
-    "antd": "^2.10.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "15.x"
   },
@@ -125,7 +129,6 @@
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.2",
     "babel-jest": "^19.0.0",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
@@ -140,11 +143,9 @@
     "flow-bin": "^0.44.2",
     "jest": "^19.0.2",
     "lint-staged": "^3.4.0",
-    "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
-    "react-test-renderer": "^15.5.4",
-    "react-addons-test-utils": "^15.5.1"
+    "react-test-renderer": "^15.5.4"
   }
 }
