@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "build": "rm -rf lib && babel --presets es2015,es2016,stage-0,react,flow --plugins transform-decorators-legacy -d lib/ src/ --ignore \"**/*.test.js\",\"**/*.stories.js\"",
-    "test": "jest --coverage",
-    "test:watch": "jest --watchAll",
+    "test": "jest --coverage --config=.jest.json",
+    "test:watch": "jest --watchAll --config=.jest.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "npm run lint:js",
@@ -21,17 +21,6 @@
     "*.js": "lint:eslint"
   },
   "pre-commit": "lint:staged",
-  "jest": {
-    "collectCoverageFrom": [
-      "app/**/*.{js,jsx}",
-      "!app/**/*.test{s}.{js,jsx}"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ],
-    "testRegex": "src/.*\\.test[s]?\\.js$"
-  },
   "dependencies": {},
   "peerDependencies": {
     "react": "15.x"
