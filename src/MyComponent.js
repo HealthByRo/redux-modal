@@ -1,16 +1,7 @@
-/* @flow */
-
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
-export default class MyComponent extends PureComponent {
-  static defaultProps = {
-    text: 'DEFAULT_TEXT',
-  };
-
-  props: {
-    text: string,
-  };
-
+class MyComponent extends PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
@@ -20,3 +11,13 @@ export default class MyComponent extends PureComponent {
     );
   }
 }
+
+MyComponent.propTypes = {
+  text: PropTypes.string,
+};
+
+MyComponent.defaultProps = {
+  text: 'DEFAULT_TEXT',
+};
+
+export default MyComponent;
