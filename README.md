@@ -35,7 +35,7 @@
 ## Setting up new component after forking react-sample-component
 1. Run `git clone git@bitbucket.org:arabellatech/react-new-component.git`
 1. Run `cd react-new-component`
-1. Run `git remote upstream add git@bitbucket.org:arabellatech/react-sample-component.git`
+1. Run `git remote add upstream git@bitbucket.org:arabellatech/react-sample-component.git`
 1. Now, after something gets updated in react-sample-component (PR merge, straight commit, etc), run `git fetch upstream`
 1. Run `git merge upstream/develop`
 1. Changes from upstream repository should now be present in forked repository.
