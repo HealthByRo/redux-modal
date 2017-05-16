@@ -28,7 +28,7 @@
 
 ## Upgrading dependencies
 1. Run `yarn`
-1. Commit `package.json` and `yarn.log` changes
+1. Commit `package.json` and `yarn.lock` changes
 1. Run `flow-typed install --overwrite`
 1. Check if `yarn flow` returns any new errors, if not, commit `flow-typed/` changes
 
