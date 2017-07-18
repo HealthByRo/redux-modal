@@ -15,6 +15,9 @@
 1. Run `yarn` to install dependencies.
 1. Run `yarn run storybook` to start StoryBook.
 
+## Release
+Follow the release process steps https://bitbucket.org/arabellatech/demo-react/wiki/Library_Release_Process
+
 ## Link local package to your project
 1. Run `cd react-sample-component/`
 1. Run `yarn link` to create a symbolic link from a global folder to the react-sample-component/ folder.
