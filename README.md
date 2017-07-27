@@ -14,6 +14,7 @@
 1. Run `cd react-sample-component/`
 1. Run `yarn` to install dependencies.
 1. Run `yarn run storybook` to start StoryBook.
+1. Run `yarn watch` to rebuild lib automatically on file change.
 
 ## Release
 Follow the release process steps https://bitbucket.org/arabellatech/demo-react/wiki/Library_Release_Process

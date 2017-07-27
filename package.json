@@ -18,7 +18,17 @@
     "lint:staged": "lint-staged",
     "prerelease": "git checkout develop",
     "release": "npm version",
-    "postrelease": "git push && git push --tags && git checkout master && git merge develop && git push && git checkout develop"
+    "postrelease": "git push && git push --tags && git checkout master && git merge develop && git push && git checkout develop",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build": {
+      "patterns": ["src"],
+      "extensions": "js",
+      "quiet": true,
+      "legacyWatch": true,
+      "delay": 2500
+    }
   },
   "lint-staged": {
     "*.js": "lint:eslint"
@@ -48,10 +58,11 @@
     "flow-bin": "^0.45.0",
     "jest": "^19.0.2",
     "lint-staged": "^3.4.0",
+    "npm-watch": "^0.2.0",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
-    "react-test-renderer": "^15.5.4",
-    "react-addons-test-utils": "^15.5.1"
+    "react-test-renderer": "^15.5.4"
   }
 }
