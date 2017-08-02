@@ -7,7 +7,7 @@
   "author": "Arabella Front-End Team",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf lib && babel --presets es2015,es2016,stage-0,react,flow --plugins transform-decorators-legacy -d lib/ src/ --ignore \"**/*.test.js\",\"**/*.stories.js\"",
+    "build": "rm -rf lib && babel --plugins transform-decorators-legacy -d lib/ src/ --ignore \"**/*.test.js\",\"**/*.stories.js\"",
     "test": "jest --coverage --config=.jest.json",
     "test:watch": "jest --watchAll --config=.jest.json",
     "storybook": "start-storybook -p 6006",
@@ -16,14 +16,16 @@
     "lint:eslint": "eslint src/**",
     "lint:js": "npm run lint:eslint -- src/ ",
     "lint:staged": "lint-staged",
-    "prerelease": "git checkout develop",
+    "prerelease": "git checkout master && git pull && git checkout develop && git pull",
     "release": "npm version",
     "postrelease": "git push && git push --tags && git checkout master && git merge develop && git push && git checkout develop",
     "watch": "npm-watch"
   },
   "watch": {
     "build": {
-      "patterns": ["src"],
+      "patterns": [
+        "src"
+      ],
       "extensions": "js",
       "quiet": true,
       "legacyWatch": true,

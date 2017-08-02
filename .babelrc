@@ -3,7 +3,6 @@
     "es2015",
     "es2016",
     "stage-0",
-    "react",
-    "flow"
+    "react"
   ],
 }
