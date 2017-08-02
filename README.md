@@ -1,45 +1,27 @@
-[![bitHound Overall Score](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/badges/score.svg)](https://www.bithound.io/bitbucket/arabellatech/react-sample-component)
-[![bitHound Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/badges/dependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/develop/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/badges/devDependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/develop/dependencies/npm)
-[![bitHound Code](https://www.bithound.io/bitbucket/arabellatech/react-sample-component/badges/code.svg)](https://www.bithound.io/bitbucket/arabellatech/react-sample-component)
+[![bitHound Overall Score](https://www.bithound.io/bitbucket/arabellatech/redux-modal/badges/score.svg)](https://www.bithound.io/bitbucket/arabellatech/redux-modal)
+[![bitHound Dependencies](https://www.bithound.io/bitbucket/arabellatech/redux-modal/badges/dependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/redux-modal/develop/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/bitbucket/arabellatech/redux-modal/badges/devDependencies.svg)](https://www.bithound.io/bitbucket/arabellatech/redux-modal/develop/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/bitbucket/arabellatech/redux-modal/badges/code.svg)](https://www.bithound.io/bitbucket/arabellatech/redux-modal)
 
-## Quick start
+# Quick start
 
-## Install example component in your-project
-1. Run `yarn add https://bitbucket.org/arabellatech/react-sample-component`
+## Install redux-modal in your-project
+1. Run `yarn add https://bitbucket.org/arabellatech/redux-modal`
+1. Done!
 
 ## Contribution
 1. Run `yarn global add getstorybook` to instal StoryBook.
-1. Clone this repo using `git clone git@bitbucket.org:arabellatech/react-sample-component.git`
-1. Run `cd react-sample-component/`
+1. Clone this repo using `git clone git@bitbucket.org:arabellatech/redux-modal.git`
+1. Run `cd redux-modal/`
 1. Run `yarn` to install dependencies.
 1. Run `yarn run storybook` to start StoryBook.
 1. Run `yarn watch` to rebuild lib automatically on file change.
 
-## Release
+# Release
 Follow the release process steps https://bitbucket.org/arabellatech/demo-react/wiki/Library_Release_Process
 
-## Link local package to your project
-1. Run `cd react-sample-component/`
-1. Run `yarn link` to create a symbolic link from a global folder to the react-sample-component/ folder.
-1. Run `cd your-project-dir`
-1. Run `yarn link react-sample-component`
-
-## Unlink local package to your project
-1. Run `cd your-project-dir`
-1. Run `yarn unlink react-sample-component`
-1. Run `yarn` to install back the repo version
-
-## Upgrading dependencies
+# Upgrading dependencies
 1. Run `yarn`
 1. Commit `package.json` and `yarn.lock` changes
 1. Run `flow-typed install --overwrite`
 1. Check if `yarn flow` returns any new errors, if not, commit `flow-typed/` changes
-
-## Setting up new component after forking react-sample-component
-1. Run `git clone git@bitbucket.org:arabellatech/react-new-component.git`
-1. Run `cd react-new-component`
-1. Run `git remote add upstream git@bitbucket.org:arabellatech/react-sample-component.git`
-1. Now, after something gets updated in react-sample-component (PR merge, straight commit, etc), run `git fetch upstream`
-1. Run `git merge --allow-unrelated-histories upstream/develop`
-1. Changes from upstream repository should now be present in forked repository.
