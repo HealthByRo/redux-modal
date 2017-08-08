@@ -7,6 +7,7 @@
 
 ## Install redux-modal in your-project
 1. Run `yarn add https://bitbucket.org/arabellatech/redux-modal`
+1. `import { modalReducer } from 'redux-modal';`
 1. Done!
 
 ## Contribution
