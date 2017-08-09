@@ -17,6 +17,7 @@ export type ModalProps = ModalComponentProps & {
   openedModal: string,
   overlayClassName?: string,
   closeOnBackgroundClick?: boolean,
+  closeTimeoutMS: number,
 }
 
 export type ModalComponentProps = {

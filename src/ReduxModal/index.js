@@ -29,6 +29,7 @@ class Modal extends PureComponent {
     className: 'modal',
     closeOnBackgroundClick: true,
     overlayClassName: 'modal-overlay',
+    closeTimeoutMS: 0,
   }
 
   constructor(props: ModalProps) {
@@ -68,6 +69,7 @@ class Modal extends PureComponent {
       onClose,
       onOpen,
       overlayClassName,
+      closeTimeoutMS,
       ...otherProps
     } = this.props;
     const isOpen = this.isOpen();
@@ -80,6 +82,7 @@ class Modal extends PureComponent {
         overlayClassName={overlayClassName}
         shouldCloseOnOverlayClick={closeOnBackgroundClick}
         onRequestClose={this.closeModal}
+        closeTimeoutMS={closeTimeoutMS}
       >
         <Component
           onClose={onClose}
