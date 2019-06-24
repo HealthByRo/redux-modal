@@ -1,9 +1,9 @@
 {
   "name": "redux-modal",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "react-modal connected with redux",
   "main": "lib/index.js",
-  "repository": "git@bitbucket.org:healthbyro/arc-sample.git",
+  "repository": "github:HealthByRo/redux-modal",
   "author": "Roman Health",
   "license": "MIT",
   "scripts": {
@@ -74,5 +74,6 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-test-renderer": "^15.5.4"
-  }
+  },
+  "homepage": "https://github.com/HealthByRo/redux-modal/"
 }
