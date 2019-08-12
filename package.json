@@ -40,7 +40,7 @@
     "immutable": "^3.8.2",
     "react-modal": "^3.3.2",
     "redux-immutable": "^4.0.0",
-    "reselect": "^3.0.1"
+    "reselect": "^4.0.0"
   },
   "peerDependencies": {
     "react": "16.x",
