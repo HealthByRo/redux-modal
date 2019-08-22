@@ -38,7 +38,7 @@
   "pre-commit": "lint:staged",
   "dependencies": {
     "immutable": "^3.8.2",
-    "react-modal": "^3.3.2",
+    "react-modal": "^3.10.1",
     "redux-immutable": "^4.0.0",
     "reselect": "^3.0.1"
   },
