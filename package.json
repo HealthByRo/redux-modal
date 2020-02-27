@@ -73,7 +73,7 @@
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
-    "react-test-renderer": "^15.5.4"
+    "react-test-renderer": "^16.13.0"
   },
   "homepage": "https://github.com/HealthByRo/redux-modal/"
 }
